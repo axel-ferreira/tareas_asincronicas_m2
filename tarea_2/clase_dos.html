@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const numero = prompt ("ingrese un numero cuaquiera")
+        parseInt(numero)
+        if (numero % 2==0){
+            console.log( numero + " es par" )
+        } else {
+            console.log(numero + " impar")
+        }
+
+        // ////////////////////////////////
+       
+        // preguntar el sexo
+        const sexo = prompt("escriba M si su sexo es masculino o F si es femenino")
+        
+        // preguntar edad 
+    
+        const edad =prompt ("cual es su edad?")
+        parseInt (edad)
+        
+        if ( sexo == "M" && edad >=65 || sexo == "F" && edad >= 60){
+            alert( "ested puede juvilarse")
+        } else{
+            alert ("usted aun no puede juvilar")
+        }
+
+
+    </script>
+    
+</body>
+</html>

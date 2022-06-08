@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contar de </title>
+</head>
+<body>
+    <script>
+        function fizzbuzz2 (){
+        let primerNumero = parseInt(prompt("elija un numero para saber su multiplo"))  
+        let segundoNumero = parseInt(prompt("elija un otro numero para saber su multiplo"))  
+        let palabra1 = prompt("elija una palabra para reemplazar los multiplos del primer numero")
+        let palabra2 = prompt("elija una palabra para reemplazar los multiplos del segundo numero")
+        let hasta = parseInt(prompt("hasta que numero desea contar?"))
+        let i = 1
+        while ( i<= hasta){
+            if ((i % primerNumero == 0) && (i % segundoNumero == 0)) {
+                console.log (palabra1 + palabra2)
+            } else if (i % primerNumero == 0){
+                console.log (palabra1)
+            } else if (i % segundoNumero == 0){
+                console.log(palabra2)
+            } else { 
+                console.log (i)
+            }
+         }
+         i++    
+        }
+    </script>
+</body>
+</html>
