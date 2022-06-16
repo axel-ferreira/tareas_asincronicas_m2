@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         En este ejercicio, deberás crear un Arreglo llamado películas, que tenga -por cada película- un Objeto con las siguientes Propiedades:
+// ● titulo
+// ● rating
+// ● loHasVisto
+// Usá un for loop para iterar sobre el Arreglo e imprimir un resultado en la consola
+function peliculas() {
+      let arrayPeliculas = [
+        { titulo: "la piedra filosofal", rating: 5, loHasVisto: si },
+        { titulo: "rapido y furioso", rating: 0, loHasVisto: no },
+        { titulo: "el perfume", rating: 4, loHasVisto: si },
+        { titulo: "avatar", rating: 5, loHasVisto: si }
+      ]
+
+      for(let peli of arrayPeliculas){
+        if (pelicula.loHasVisto == si) {
+          console.log("Viste " + peli.titulo + " - " + peli.rating + " estrellas");
+        }
+        else {
+          console.log("No Viste " + peli.titulo + " - " + peli.rating + " estrellas");
+        }
+      }
+    }
+
+
+    // Debés crear una función llamada `arregloDeObjetos` que reciba un número y una palabra como parámetro y devuelva un arreglo de objetos que tenga: una propiedad llamada como la palabra pasada por parámetro y el valor del número y sus anteriores.
+
+    function arregloDeObjetos ( numero, palabra){
+      const objeto = {}
+      const array = []
+      const propertyKey = palabra
+      for (let i = 0;i < numero;i++) {        
+        objeto[propertyKey] = i+1
+        array[i] = {[propertyKey]: i+1}
+      }
+      return array
+    }
+
+    </script>
+</body>
+</html>
